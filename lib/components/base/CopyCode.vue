@@ -8,28 +8,20 @@
 
 <script setup>
 import { CheckIcon, ClipboardCopyIcon } from "@";
-</script>
+import { ref } from "vue";
 
-<script>
-export default {
-  props: {
-    text: {
-      type: String,
-      required: true,
-    },
+const props = defineProps({
+  text: {
+    type: String,
+    required: true,
   },
-  data() {
-    return {
-      copied: false,
-    };
-  },
-  methods: {
-    async copyText() {
-      await navigator.clipboard.writeText(this.text);
-      this.copied = true;
-    },
-  },
-};
+});
+const copied = ref(false);
+
+async function copyText() {
+  await navigator.clipboard.writeText(props.text);
+  copied.value = true;
+}
 </script>
 
 <style lang="scss" scoped>

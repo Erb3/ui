@@ -1,4 +1,4 @@
-import ui from "ui";
+import { plugin as ui } from "ui";
 import DefaultTheme from "vitepress/theme";
 import DemoContainer from "./DemoContainer.vue";
 

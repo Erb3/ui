@@ -1,7 +1,7 @@
 # Pagination
 
 <script setup>
-import { ref } from "vue"; 
+import { ref } from "vue";
 
 const currentPage = ref(1)
 
@@ -17,10 +17,10 @@ function switchPage(page) {
 <script setup>
 import { ref } from "vue";
 
-const currentPage = ref(1)
+const currentPage = ref(1);
 
 function switchPage(page) {
-  currentPage.value = page
+  currentPage.value = page;
 }
 </script>
 
