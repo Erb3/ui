@@ -13,32 +13,32 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, defineEmits, ref, onMounted } from 'vue';
+import { ref, onMounted } from "vue";
 
 const props = withDefaults(
   defineProps<{
     accept: string;
   }>(),
   {
-    accept: '*',
-  },
+    accept: "*",
+  }
 );
 
-const emit = defineEmits(['change']);
+const emit = defineEmits(["change"]);
 
 const dropAreaRef = ref<HTMLDivElement>();
 const fileAllowed = ref(false);
 
 const hideDropArea = () => {
   if (dropAreaRef.value) {
-    dropAreaRef.value.style.visibility = 'hidden';
+    dropAreaRef.value.style.visibility = "hidden";
   }
 };
 
 const handleDrop = (event: DragEvent) => {
   hideDropArea();
   if (event.dataTransfer && event.dataTransfer.files && fileAllowed.value) {
-    emit('change', event.dataTransfer.files);
+    emit("change", event.dataTransfer.files);
   }
 };
 
@@ -47,14 +47,14 @@ const allowDrag = (event: DragEvent) => {
   if (
     file &&
     props.accept
-      .split(',')
-      .reduce((acc, t) => acc || file.type.startsWith(t) || file.type === t || t === '*', false)
+      .split(",")
+      .reduce((acc, t) => acc || file.type.startsWith(t) || file.type === t || t === "*", false)
   ) {
     fileAllowed.value = true;
-    event.dataTransfer.dropEffect = 'copy';
+    event.dataTransfer.dropEffect = "copy";
     event.preventDefault();
     if (dropAreaRef.value) {
-      dropAreaRef.value.style.visibility = 'visible';
+      dropAreaRef.value.style.visibility = "visible";
     }
   } else {
     fileAllowed.value = false;
@@ -63,7 +63,7 @@ const allowDrag = (event: DragEvent) => {
 };
 
 onMounted(() => {
-  document.addEventListener('dragenter', allowDrag);
+  document.addEventListener("dragenter", allowDrag);
 });
 </script>
 
@@ -77,13 +77,11 @@ onMounted(() => {
   z-index: 10;
   visibility: hidden;
   background-color: hsla(0, 0%, 0%, 0.5);
-  transition:
-    visibility 0.2s ease-in-out,
-    background-color 0.1s ease-in-out;
+  transition: visibility 0.2s ease-in-out, background-color 0.1s ease-in-out;
   display: flex;
   &::before {
     --indent: 4rem;
-    content: ' ';
+    content: " ";
     position: relative;
     top: var(--indent);
     left: var(--indent);

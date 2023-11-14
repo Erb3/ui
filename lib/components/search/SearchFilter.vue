@@ -16,21 +16,21 @@
 </template>
 
 <script setup>
-import { defineProps, defineEmits, computed } from 'vue';
-import { Checkbox } from '@';
+import { computed } from "vue";
+import { Checkbox } from "@";
 
 const props = defineProps({
   facetName: {
     type: String,
-    default: '',
+    default: "",
   },
   displayName: {
     type: String,
-    default: '',
+    default: "",
   },
   icon: {
     type: String,
-    default: '',
+    default: "",
   },
   activeFilters: {
     type: Array,
@@ -41,10 +41,10 @@ const props = defineProps({
 });
 
 const isActive = computed(() => props.activeFilters.includes(props.facetName));
-const emit = defineEmits(['toggle']);
+const emit = defineEmits(["toggle"]);
 
 const toggle = () => {
-  emit('toggle', props.facetName);
+  emit("toggle", props.facetName);
 };
 </script>
 
