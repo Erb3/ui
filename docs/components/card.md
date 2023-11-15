@@ -1,13 +1,15 @@
 # Card
 
+A card is a container.
+
 <DemoContainer class="standard-body" style="background-color: var(--color-bg)">
 <Card>
-  This is a card!
+  You have a car.
 </Card>
 </DemoContainer>
 
 ```vue
 <Card>
-This is a card!
+You have a car.
 </Card>
 ```

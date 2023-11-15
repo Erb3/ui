@@ -1,7 +1,9 @@
 # Toggle
 
+A fancy looking [checkbox](./checkbox.md).
+
 <script setup>
-import { ref } from "vue"; 
+import { ref } from "vue";
 
 const value = ref(true)
 </script>
@@ -11,9 +13,9 @@ const value = ref(true)
 
 ```vue
 <script setup>
-import { ref } from "vue"; 
+import { ref } from "vue";
 
-const value = ref(true)
+const value = ref(true);
 </script>
 
 <Toggle v-model="value" />

@@ -1,4 +1,7 @@
 # Overflow Menu
+
+Basically a [Dropdown select](./dropdown-select.md), except you have to click to open it and you don't select anything.
+
 <DemoContainer>
   <OverflowMenu :options="[
   {
@@ -53,33 +56,34 @@
   class="btn"
   :options="[
     {
-      'id': 'play',
-      'color': 'primary',
-      'action': () => {},
-      'hoverFilledOnly': true
+      id: 'play',
+      color: 'primary',
+      action: () => {},
+      hoverFilledOnly: true,
     },
     { divider: true },
     {
-      'id': 'duplicate',
-      'action': () => {}
+      id: 'duplicate',
+      action: () => {},
     },
     {
-      'id': 'report',
-      'action': () => {}
+      id: 'report',
+      action: () => {},
     },
     {
-      'id': 'remain',
-      'action': () => {},
-      'remainOnClick': true,
+      id: 'remain',
+      action: () => {},
+      remainOnClick: true,
     },
     { divider: true },
     {
-      'id': 'delete',
-      'color': 'danger',
-      'action': () => {},
-      'hoverFilled': true,
-    }
-]">
+      id: 'delete',
+      color: 'danger',
+      action: () => {},
+      hoverFilled: true,
+    },
+  ]"
+>
   More options...
   <template #like>
     <HeartIcon /> Like

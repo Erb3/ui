@@ -1,7 +1,9 @@
 # Checkbox
 
+A checkbox is a box with a boolean value.
+
 <script setup>
-import { ref } from "vue"; 
+import { ref } from "vue";
 
 const value = ref(false)
 </script>
@@ -14,7 +16,7 @@ const value = ref(false)
 <script setup>
 import { ref } from "vue";
 
-const value = ref(false)
+const value = ref(false);
 </script>
 
 <Checkbox v-model="value">Test</Checkbox>

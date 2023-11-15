@@ -1,4 +1,7 @@
 # Text Inputs
+
+You write text into it.
+
 <script setup>
 import { ref } from "vue";
 const inputText = ref(null)
@@ -12,10 +15,7 @@ const inputText = ref(null)
 </DemoContainer>
 
 ```vue
-<input
-    type="text"
-    placeholder="Text input"
-/>
+<input type="text" placeholder="Text input" />
 ```
 
 <DemoContainer>
@@ -32,10 +32,10 @@ const inputText = ref(null)
 </div>
 </DemoContainer>
 
-```vue
+```js
 <script setup>
 import { ref } from "vue";
-const inputText = ref(null)
+const inputText = ref(null);
 </script>
 
 <div class="iconified-input">
@@ -72,7 +72,7 @@ const inputText = ref(null)
 </div>
 </DemoContainer>
 
-```vue
+```js
 <script setup>
 import { ref } from "vue";
 const inputText = ref(null)
@@ -98,4 +98,3 @@ const value = ref(null)
   </div>
 </div>
 ```
-

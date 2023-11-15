@@ -11,63 +11,33 @@ const onSelected = (option) => {
 </script>
 
 <DemoContainer>
-{{options}}
-{{text}}
+
+You have selected: {{options.join(", ") || "none"}}
 
 <SearchDropdown
-  placeholder="Search for dependencies"
-  @on-selected="onSelected"
-  v-model="text"
-  :options="[
-    {
-      title: 'Project 1',
-      subtitle: 'Author 1',
-      icon: 'https://cdn.modrinth.com/data/pzd7e1y0/a00d7bc1cec363bb4e678da82f33da5708e8a30a.png',
-      id: 'ejnfwfinj',
-    },
-    {
-      title: 'Project 2',
-      subtitle: 'Author 1',
-      icon: 'https://cdn.modrinth.com/data/pzd7e1y0/a00d7bc1cec363bb4e678da82f33da5708e8a30a.png',
-      id: 'ejnfwfinj',
-    },
-    {
-      title: 'Project 3',
-      subtitle: 'Author 1',
-      icon: 'https://cdn.modrinth.com/data/pzd7e1y0/a00d7bc1cec363bb4e678da82f33da5708e8a30a.png',
-      id: 'ejnfwfinj',
-    },
-    {
-      title: 'Project 3',
-      subtitle: 'Author 1',
-      icon: 'https://cdn.modrinth.com/data/pzd7e1y0/a00d7bc1cec363bb4e678da82f33da5708e8a30a.png',
-      id: 'ejnfwfinj',
-    },
-    {
-      title: 'Project 1',
-      subtitle: 'Author 1',
-      icon: 'https://cdn.modrinth.com/data/pzd7e1y0/a00d7bc1cec363bb4e678da82f33da5708e8a30a.png',
-      id: 'ejnfwfinj',
-    },
-    {
-      title: 'Project 2',
-      subtitle: 'Author 1',
-      icon: 'https://cdn.modrinth.com/data/pzd7e1y0/a00d7bc1cec363bb4e678da82f33da5708e8a30a.png',
-      id: 'ejnfwfinj',
-    },
-    {
-      title: 'Project 3',
-      subtitle: 'Author 1',
-      icon: 'https://cdn.modrinth.com/data/pzd7e1y0/a00d7bc1cec363bb4e678da82f33da5708e8a30a.png',
-      id: 'ejnfwfinj',
-    },
-    {
-      title: 'Project 3',
-      subtitle: 'Author 1',
-      icon: 'https://cdn.modrinth.com/data/pzd7e1y0/a00d7bc1cec363bb4e678da82f33da5708e8a30a.png',
-      id: 'ejnfwfinj',
-    }
-  ]"
+placeholder="Search for dependencies"
+@on-selected="onSelected"
+v-model="text"
+:options="[
+{
+title: 'Project 1',
+subtitle: 'Author 1',
+icon: 'https://cdn.modrinth.com/data/pzd7e1y0/a00d7bc1cec363bb4e678da82f33da5708e8a30a.png',
+id: 'ejnfwfinj',
+},
+{
+title: 'Project 2',
+subtitle: 'Author 1',
+icon: 'https://cdn.modrinth.com/data/pzd7e1y0/a00d7bc1cec363bb4e678da82f33da5708e8a30a.png',
+id: 'ejnfwfinj',
+},
+{
+title: 'Project 3',
+subtitle: 'Author 1',
+icon: 'https://cdn.modrinth.com/data/pzd7e1y0/a00d7bc1cec363bb4e678da82f33da5708e8a30a.png',
+id: 'ejnfwfinj',
+}
+]"
 />
 
 </DemoContainer>

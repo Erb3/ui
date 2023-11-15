@@ -1,5 +1,7 @@
 # File Input
 
+A button you press to open the file explorer and make the user select a file.
+
 <DemoContainer>
 <FileInput
   :max-size="262144"
@@ -11,7 +13,7 @@
 </FileInput>
 </DemoContainer>
 
-```vue
+```js
 <FileInput
   :max-size="262144"
   accept="image/png,image/jpeg,image/gif,image/webp"
@@ -20,26 +22,4 @@
 >
   <UploadIcon />
 </FileInput>
-```
-
-## Long Style
-
-<DemoContainer>
-<FileInput
-  :max-size="262144"
-  accept="image/png,image/jpeg,image/gif,image/webp"
-  long-style
-  class="btn"
-  prompt="Upload icon"
-/>
-</DemoContainer>
-
-```vue
-<FileInput
-  :max-size="262144"
-  accept="image/png,image/jpeg,image/gif,image/webp"
-  long-style
-  class="btn"
-  prompt="Upload icon"
-/>
 ```

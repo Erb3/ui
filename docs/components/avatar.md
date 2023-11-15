@@ -1,5 +1,7 @@
 # Avatars
 
+An avatar is an image representing a user.
+
 <DemoContainer class="columns">
 <Avatar alt="green flame" size="lg" circle src="https://cdn.modrinth.com/data/AANobbMI/icon.png" />
 <Avatar size="md" src="https://cdn.modrinth.com/data/AANobbMI/icon.png" />

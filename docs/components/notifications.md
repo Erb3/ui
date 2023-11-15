@@ -1,5 +1,7 @@
 # Notifications
 
+When something happens (like an HTTP error) you display a notification in the corner.
+
 <script setup>
 import { ref } from "vue";
 
@@ -31,8 +33,8 @@ const notifsContainer = ref(null);
 function addNotification(type) {
   console.log(notifsContainer);
   notifsContainer.value.addNotification({
-    title: 'Test Notification',
-    text: 'This is a test! Random number: ' + Math.random(),
+    title: "Test Notification",
+    text: "This is a test! Random number: " + Math.random(),
     type,
   });
 }

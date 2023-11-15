@@ -1,5 +1,8 @@
 # Pagination
 
+A pagination is used to have multiple "pages", like search results.
+An alternative design to this would be to lazily load the content as the user scrolls.
+
 <script setup>
 import { ref } from "vue";
 

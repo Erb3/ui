@@ -1,7 +1,9 @@
 # Chips
 
+Chips are like checkboxes, except that there are multiple and you can only select one.
+
 <script setup>
-import { ref } from "vue"; 
+import { ref } from "vue";
 
 const value = ref('option 1')
 </script>
@@ -11,9 +13,9 @@ const value = ref('option 1')
 
 ```vue
 <script setup>
-import { ref } from "vue"; 
+import { ref } from "vue";
 
-const value = ref('option 1')
+const value = ref("option 1");
 </script>
 
 <Chips v-model="value" :items="['option 1', 'option 2', 'option 3', 'option 4']" />

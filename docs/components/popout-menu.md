@@ -1,4 +1,7 @@
 # Popout Menu
+
+An [Overflow Menu](./overflow-menu.md) but for text.
+
 <DemoContainer>
   <PopoutMenu class="btn" position="bottom" direction="left">
     Bottom going left

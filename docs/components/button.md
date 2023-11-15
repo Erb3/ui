@@ -1,5 +1,7 @@
 # Buttons
 
+A button is something you can click.
+
 ## Standard
 
 <DemoContainer>
@@ -10,7 +12,7 @@
 <Button color="danger"><TrashIcon /> Delete</Button>
 </DemoContainer>
 
-```vue
+```js
 <Button><BookmarkIcon /> Save</Button>
 <Button color="primary"><UploadIcon /> Upload</Button>
 <Button color="secondary"><PlusIcon /> Create new instance</Button>
@@ -26,7 +28,7 @@
 <Button color="purple" large><HeartIcon /> Donate</Button>
 </DemoContainer>
 
-```vue
+```js
 <Button color="primary" large><DownloadIcon /> Download</Button>
 <Button color="blue" large><ServerIcon /> Host a Server</Button>
 <Button color="purple" large><HeartIcon /> Donate</Button>
@@ -39,7 +41,7 @@
 <Button color="red" outline><ReportIcon /> Report project</Button>
 </DemoContainer>
 
-```vue
+```js
 <Button color="primary" outline><DownloadIcon/> Get Modrinth App</Button>
 <Button color="red" outline><ReportIcon /> Report project</Button>
 ```
@@ -52,7 +54,7 @@
 <Button color="blue" transparent><GlobeIcon/> Visit website</Button>
 </DemoContainer>
 
-```vue
+```js
 <Button transparent><IssuesIcon /> Report issues</Button>
 <Button transparent><CodeIcon /> View sources</Button>
 <Button color="blue" transparent><GlobeIcon/> Visit website</Button>
@@ -67,7 +69,7 @@
 <Button color="red" outline hoverFilled><TrashIcon /> Delete</Button>
 </DemoContainer>
 
-```vue
+```js
 <Button color="green" transparent hoverFilled><PlayIcon /> Play</Button>
 <Button color="red" transparent hoverFilled><TrashIcon /> Delete</Button>
 <Button color="green" outline hoverFilled><PlayIcon /> Play</Button>
@@ -83,7 +85,7 @@
 <Button color="red" outline hoverFilledOnly><TrashIcon /> Delete</Button>
 </DemoContainer>
 
-```vue
+```js
 <Button color="green" transparent hoverFilledOnly><PlayIcon /> Play</Button>
 <Button color="red" transparent hoverFilledOnly><TrashIcon /> Delete</Button>
 <Button color="green" outline hoverFilledOnly><PlayIcon /> Play</Button>
@@ -100,7 +102,7 @@
 <Button icon-only transparent><DropdownIcon /></Button>
 </DemoContainer>
 
-```vue
+```js
 <Button icon-only><HeartIcon /></Button>
 <Button icon-only><XIcon /></Button>
 <Button icon-only><MoreHorizontalIcon /></Button>
@@ -134,7 +136,7 @@
 </div>
 </DemoContainer>
 
-```vue
+```js
 <div class="joined-buttons">
   <Button color="primary"><UploadIcon /> Upload</Button>
   <OverflowMenu :options="[

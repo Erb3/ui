@@ -1,43 +1,49 @@
 # Dropdown
+
+Thing expands downwards and you can choose one of the options.
+
 <script setup>
-import {ref} from "vue";
+import { ref } from "vue";
 
 const value = ref(null);
-
-const newValue = ref(null);
-const options = ref([{ test: 'hello', display: 'no' }, { test: 'nob', display: 'yes' },  { test: 'ball', display: 'eat' }]);
+const value2 = ref(null);
+const value3 = ref(null);
 </script>
 
 <DemoContainer>
   <DropdownSelect
-    v-model="value"
+    v-model="value1"
     :options="['Daily', 'Weekly', 'Monthly', 'Tomorrow', 'Yesterday', 'Today', 'Biweekly', 'Tuesday', 'January']"
     placeholder="Choose Frequency"
   />
   <DropdownSelect
-    v-model="value"
+    v-model="value2"
     :options="['Daily', 'Weekly', 'Monthly', 'Tomorrow', 'Yesterday', 'Today', 'Biweekly', 'Tuesday', 'January']"
     placeholder="Choose Frequency"
     render-up
   />
   <DropdownSelect
-    v-model="value"
+    v-model="value3"
     :options="['Daily', 'Weekly', 'Monthly', 'Tomorrow', 'Yesterday', 'Today', 'Biweekly', 'Tuesday', 'January']"
     placeholder="Choose Frequency"
     disabled
-  />
-  <DropdownSelect
-    v-model="newValue"
-    :options="options"
-    placeholder="Choose Frequency"
-    :display-name="(name) => name?.display"
   />
 </DemoContainer>
 
 ```vue
 <DropdownSelect
   v-model="value"
-  :options="['Daily', 'Weekly', 'Monthly', 'Tomorrow', 'Yesterday', 'Today', 'Biweekly', 'Tuesday', 'January']"
+  :options="[
+    'Daily',
+    'Weekly',
+    'Monthly',
+    'Tomorrow',
+    'Yesterday',
+    'Today',
+    'Biweekly',
+    'Tuesday',
+    'January',
+  ]"
   placeholder="Choose Frequency"
   render-up
 />
