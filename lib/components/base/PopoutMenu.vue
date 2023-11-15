@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-import { onBeforeUnmount, onMounted, ref } from 'vue';
+import { onBeforeUnmount, onMounted, ref } from "vue";
 
 const props = defineProps({
   disabled: {
@@ -28,11 +28,11 @@ const props = defineProps({
   },
   position: {
     type: String,
-    default: 'bottom',
+    default: "bottom",
   },
   direction: {
     type: String,
-    default: 'left',
+    default: "left",
   },
 });
 defineOptions({
@@ -78,11 +78,11 @@ const handleClickOutside = (event) => {
 };
 
 onMounted(() => {
-  window.addEventListener('click', handleClickOutside);
+  window.addEventListener("click", handleClickOutside);
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener('click', handleClickOutside);
+  window.removeEventListener("click", handleClickOutside);
 });
 </script>
 
@@ -102,14 +102,8 @@ onBeforeUnmount(() => {
     box-shadow: var(--shadow-floating);
     z-index: 10;
     opacity: 0;
-    pointer-events: none;
-    transition:
-      bottom 0.125s ease-in-out,
-      top 0.125s ease-in-out,
-      left 0.125s ease-in-out,
-      right 0.125s ease-in-out,
-      opacity 0.125s ease-in-out,
-      scale 0.125s ease-in-out;
+    transition: bottom 0.125s ease-in-out, top 0.125s ease-in-out, left 0.125s ease-in-out,
+      right 0.125s ease-in-out, opacity 0.125s ease-in-out, scale 0.125s ease-in-out;
 
     @media (prefers-reduced-motion) {
       transition: none !important;
