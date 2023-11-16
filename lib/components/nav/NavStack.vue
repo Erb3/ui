@@ -1,11 +1,11 @@
 <template>
-  <div class="omorphia__navstack">
+  <div>
     <slot />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.omorphia__navstack {
+div {
   display: flex;
   flex-direction: column;
 
