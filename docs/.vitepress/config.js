@@ -5,7 +5,7 @@ import svgLoader from "vite-svg-loader";
 export default defineConfig({
   title: "Erb3/ui",
   description: "Erb3's personal bag of Vue components!",
-  head: [["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]],
+  head: [["link", { rel: "icon", type: "image/x-icon", href: "/ui/favicon.ico" }]],
   lang: "en-US",
   base: "/ui/",
   cleanUrls: true,
