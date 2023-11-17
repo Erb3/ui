@@ -28,3 +28,17 @@ const navRoutes = ref([
 <DemoContainer>
   <NavRow :links="navRoutes"/>
 </DemoContainer>
+
+There is also a navigation that stacks.
+
+<DemoContainer>
+  <NavStack>
+  <h1>Components</h1>
+  <NavStackItem label="Avatars" link="./avatar.md" />
+  <NavStackItem label="Buttons" link="./buttons.md" />
+  <NavStackItem label="Cards" link="./cards.md" />
+
+  <h2>Checkboxes</h2>
+  <NavStackItem label="Checkboxes" link="./checkboxes.md" />
+  </NavStack>
+</DemoContainer>

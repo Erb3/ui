@@ -1,11 +1,14 @@
 import { resolve } from "path";
+import { defineConfig } from "vitepress";
 import svgLoader from "vite-svg-loader";
 
-/** @type {import('vitepress').SiteConfig} */
-export default {
+export default defineConfig({
   title: "Erb3/ui",
   description: "Erb3's personal bag of Vue components!",
   head: [["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]],
+  lang: "en-US",
+  base: "/ui/",
+  cleanUrls: true,
   themeConfig: {
     logo: { src: "/favicon.svg", width: 24, height: 24 },
     socialLinks: [{ icon: "github", link: "https://github.com/Erb3/ui" }],
@@ -75,4 +78,4 @@ export default {
       dedupe: ["vue"],
     },
   },
-};
+});

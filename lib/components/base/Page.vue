@@ -13,7 +13,7 @@ defineProps({
 
 <template>
   <div
-    class="omorphia__page"
+    class="ui__page"
     :class="{
       'right-sidebar': rightSidebar,
       'has-sidebar': !!$slots.sidebar,
@@ -37,7 +37,7 @@ defineProps({
 </template>
 
 <style lang="scss" scoped>
-.omorphia__page {
+.ui__page {
   display: flex;
   flex-direction: column;
   padding: 0 0.75rem;
@@ -60,7 +60,7 @@ defineProps({
 }
 
 @media (min-width: 1024px) {
-  .omorphia__page {
+  .ui__page {
     margin: 0 auto;
     max-width: 80rem;
     column-gap: 0.75rem;
@@ -68,33 +68,33 @@ defineProps({
     &.has-sidebar {
       display: grid;
       grid-template:
-        'sidebar content' auto
-        'footer content' auto
-        'dummy content' 1fr
+        "sidebar content" auto
+        "footer content" auto
+        "dummy content" 1fr
         / 20rem 1fr;
 
       &.has-header {
         grid-template:
-          'header header' auto
-          'sidebar content' auto
-          'footer content' auto
-          'dummy content' 1fr
+          "header header" auto
+          "sidebar content" auto
+          "footer content" auto
+          "dummy content" 1fr
           / 20rem 1fr;
       }
 
       &.right-sidebar {
         grid-template:
-          'content sidebar' auto
-          'content footer' auto
-          'content dummy' 1fr
+          "content sidebar" auto
+          "content footer" auto
+          "content dummy" 1fr
           / 1fr 20rem;
 
         &.has-header {
           grid-template:
-            'header header' auto
-            'content sidebar' auto
-            'content footer' auto
-            'content dummy' 1fr
+            "header header" auto
+            "content sidebar" auto
+            "content footer" auto
+            "content dummy" 1fr
             / 1fr 20rem;
         }
       }
@@ -112,7 +112,7 @@ defineProps({
 }
 
 @media (min-width: 80rem) {
-  .omorphia__page.has-sidebar {
+  .ui__page.has-sidebar {
     .content {
       width: calc(60rem - 0.75rem);
     }

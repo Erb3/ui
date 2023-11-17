@@ -3,17 +3,17 @@
 An avatar is an image representing a user.
 
 <DemoContainer class="columns">
-<Avatar alt="green flame" size="lg" circle src="https://cdn.modrinth.com/data/AANobbMI/icon.png" />
-<Avatar size="md" src="https://cdn.modrinth.com/data/AANobbMI/icon.png" />
+<Avatar alt="green flame" size="lg" circle src="https://github.com/Erb3.png" />
+<Avatar size="md" src="https://github.com/Erb3.png" />
 <Avatar size="sm" />
-<Avatar size="xs" circle src="https://cdn.modrinth.com/data/AANobbMI/icon.png" />
+<Avatar size="xs" circle src="https://github.com/Erb3.png" />
 </DemoContainer>
 
 ```js
-<Avatar size="lg" circle src="https://cdn.modrinth.com/data/AANobbMI/icon.png" />
-<Avatar size="md" src="https://cdn.modrinth.com/data/AANobbMI/icon.png" />
+<Avatar size="lg" circle src="https://github.com/Erb3.png" />
+<Avatar size="md" src="https://github.com/Erb3.png" />
 <Avatar size="sm" />
-<Avatar size="xs" circle src="https://cdn.modrinth.com/data/AANobbMI/icon.png" />
+<Avatar size="xs" circle src="https://github.com/Erb3.png" />
 ```
 
 ## Source and alternative text

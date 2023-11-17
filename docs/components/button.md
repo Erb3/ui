@@ -37,12 +37,13 @@ A button is something you can click.
 ## Outline
 
 <DemoContainer>
-<Button color="primary" outline><DownloadIcon/> Get Modrinth App</Button>
+<Button color="primary" outline><DownloadIcon/> Download the App</Button>
 <Button color="red" outline><ReportIcon /> Report project</Button>
+<Button color="blue" large outline><DownloadIcon />Test</Button>
 </DemoContainer>
 
 ```js
-<Button color="primary" outline><DownloadIcon/> Get Modrinth App</Button>
+<Button color="primary" outline><DownloadIcon/> Download the App</Button>
 <Button color="red" outline><ReportIcon /> Report project</Button>
 ```
 
